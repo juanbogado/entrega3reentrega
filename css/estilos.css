@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+    background-color: rgb(117, 108, 108);
+}
+
+body{
+    font-family: 'Inter' , sans-serif; 
+}
+
+.navbar-light .navbar-nav .nav-link.color-violeta{
+    color: rgb(208, 187, 227);
+}
+
+.navbar-light .navbar-nav .nav-link.color-negro{
+    color: rgb(0, 0, 0);
+}
+
+.bgVioleta{
+    /*background-color: rgb(143, 89, 195);*/
+    background-color: rgb(129, 129, 129);
+}
+
+.titulos{
+    display: flex;
+    justify-content: center;
+}
+.carousel-item{
+    height: 60vh;
+    width: 100%;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card{
+    width: 10rem;
+}
+
+.card-marcas{
+    width: 16rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* estilos de footer */ 
+.footer-padre{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-padre div{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulos-footer{
+    color: rgb(0, 0, 0);
+}
+
+.a-footer{
+    color: rgb(0, 5, 5);
+}
+
+
+.derechos{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 0px) and (max-width: 768px){
+    
+    .carousel-item{
+        height: 40vh;
+    }
+    .carousel-item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    
+}
