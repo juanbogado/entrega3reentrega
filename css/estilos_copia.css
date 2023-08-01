@@ -3,15 +3,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;   
-    background-color: #1f363d;
+    background-color: rgb(117, 108, 108);
 }
 
 body{
     font-family: 'Inter' , sans-serif; 
 }
-.carousel-indicators {
-    z-index: 0;
-  }
 
 .navbar-light .navbar-nav .nav-link.color-violeta{
     color: rgb(208, 187, 227);
@@ -21,6 +18,10 @@ body{
     color: rgb(0, 0, 0);
 }
 
+.bgVioleta{
+    /*background-color: rgb(143, 89, 195);*/
+    background-color: rgb(129, 129, 129);
+}
 
 .titulos{
     display: flex;
