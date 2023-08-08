@@ -1,0 +1,24 @@
+/* Variables*/
+
+$color-primario: #1b263b;
+$color-secundario: #55A;
+$color-texto: #a3cef1;
+
+$fuente-titulos: 1em;
+$fuente-subtitulos: 0.8em;
+$fuente-parafos: 1.4em;
+
+$tipografia-general: 'Inter' , sans-serif;
+
+$contenedor-flex: flex;
+$contenedor-flex-centrado: center;
+
+/* Mapas, donde utilice los mapas estan en utilitarias en la aprte de estilos de contactos */
+
+$map-flex:(
+    flex: flex,
+    row: row,
+    column: column,
+    space-around: space-around,
+    center: center,
+);

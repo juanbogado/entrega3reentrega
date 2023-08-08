@@ -1,0 +1,21 @@
+/* estilos de footer */ 
+
+.footer-padre{
+    display: $contenedor-flex;
+    justify-content: space-evenly;
+}
+
+.titulos-footer{
+    display: $contenedor-flex;
+    flex-direction: column;
+    color: #c0fdfb;
+}
+
+.a-footer{
+    color: #c0fdfb;
+}
+
+.derechos{
+    text-align: center;
+    color: #c0fdfb;
+}

@@ -1,0 +1,108 @@
+/* carrusel principal con titulos*/
+
+.navbar-light .navbar-nav .nav-link.color-violeta{
+    color: #26de41;
+}
+
+.navbar-light .navbar-nav .nav-link.color-negro{
+    color: rgb(255, 255, 255);
+}
+
+.titulos{
+    display: $contenedor-flex;
+    justify-content: $contenedor-flex-centrado;
+    padding: 16px;
+    color: #a3cef1;
+}
+
+/*Carrusel principal*/
+
+.logo-principal{
+    color: #c0fdfb;
+}
+
+.carousel-indicators {
+    z-index: 0;
+}
+
+.carousel-item{
+    height: 60vh;
+    width: 100%;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.descuento{
+    padding: 16px;
+}
+
+/* estilos de tienda*/
+
+.titulos-tiendas{
+    display: $contenedor-flex;
+    justify-content: start;
+    padding: 10px 0 10px 50px;
+    color: aquamarine;
+}
+
+/* Estilos ofertas*/
+
+.ofertas-descripcion{
+    display: $contenedor-flex;
+    justify-content: $contenedor-flex-centrado;
+    align-items: center;
+    
+}
+
+.ofertas-p{
+    width: 50%;
+    padding: 10px 60px 20px;
+    color: antiquewhite;
+}
+.carrusel-ofertas{
+    width: 50%;
+    padding: 50px;
+}
+
+/* Estilos de contacto*/
+
+.articulos{
+    display: $contenedor-flex;
+    justify-content: $contenedor-flex-centrado;
+    align-items: center;
+    width: 100%;
+    padding: 10px 50px 20px;
+    color: #c0fdfb;
+}
+
+.video-yt {
+    display: $contenedor-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+}
+.img-local{
+    display: $contenedor-flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.formulario{
+    display: $contenedor-flex;
+    flex-direction: map-get($map-flex, row);
+    justify-content: map-get($map-flex, space-around);
+    width: 100%;
+    padding: 16px;
+}
+
+.mapita{
+    display: $contenedor-flex;
+    flex-direction: row;
+    width: 95%;
+    padding: 16px;
+}
+

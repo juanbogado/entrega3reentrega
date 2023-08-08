@@ -1,0 +1,7 @@
+/* mixines*/
+@mixin flex-justificado-color($justify){
+    display: flex;
+    justify-content: $justify; 
+    padding: 16px;
+    color: #a3cef1;
+}
