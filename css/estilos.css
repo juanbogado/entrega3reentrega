@@ -9,12 +9,12 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-image: linear-gradient(to right top, #b375e7, #a177e8, #8e79e7, #7b7ae6, #667be3, #696dc9, #675fb0, #635298, #5a3968, #44253f, #27161f, #000000);
+  background-image: linear-gradient(to bottom, #b375e7, #a177e8, #8e79e7, #7b7ae6, #667be3, #696dc9, #675fb0, #635298, #5a3968, #44253f, #27161f, #000000);
 }
 
 /* carrusel principal con titulos*/
 .navbar-light .navbar-nav .nav-link.color-violeta {
-  color: #26de41;
+  color: #04460e;
 }
 
 .navbar-light .navbar-nav .nav-link.color-negro {
@@ -25,12 +25,11 @@ body {
   display: flex;
   justify-content: center;
   padding: 16px;
-  color: #a3cef1;
 }
 
 /*Carrusel principal*/
 .logo-principal {
-  color: #c0fdfb;
+  color: rgb(1, 1, 3);
 }
 
 .carousel-indicators {
@@ -50,6 +49,33 @@ body {
 
 .descuento {
   padding: 16px;
+}
+
+/*Estilo de marcas anidaccion con sass*/
+.galeria {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 16px;
+}
+.galeria .figura {
+  display: flex;
+  justify-content: center;
+}
+.galeria .figura .efecto {
+  border-radius: 30px;
+  border: 2px solid black;
+}
+.galeria .figura .efecto:hover {
+  transform: scale(1.3);
+  transition: all 0.4s;
+}
+.galeria .info-product {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  color: #000000;
 }
 
 /* estilos de tienda*/
@@ -85,7 +111,7 @@ body {
   align-items: center;
   width: 100%;
   padding: 10px 50px 20px;
-  color: #c0fdfb;
+  color: #000000;
 }
 
 .video-yt {
@@ -117,6 +143,35 @@ body {
   padding: 16px;
 }
 
+/* estilos de error */
+.error {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Anidacio con sass */
+.footer-padre {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-padre .titulos-footer {
+  display: flex;
+  flex-direction: column;
+  color: #c0fdfb;
+}
+.footer-padre .titulos-footer .a-footer {
+  color: #c0fdfb;
+}
+.footer-padre .titulos-footer .a-footer:hover {
+  transform: scale(1.3);
+  transition: all 0.4s;
+}
+.footer-padre .derechos {
+  text-align: center;
+  color: #c0fdfb;
+}
+
 /* mixines*/
 .titulos {
   display: flex;
@@ -146,55 +201,12 @@ body {
   color: #c0fdfb;
 }
 
-/*Estilo de marcas anidaccion con sass*/
-.galeria {
-  display: grid;
-  place-content: center;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  padding: 16px;
-}
-.galeria .figura {
-  display: flex;
-  justify-content: center;
-}
-.galeria .figura .efecto {
-  border-radius: 30px;
-  border: 2px solid black;
-}
-.galeria .figura .efecto:hover {
-  transform: scale(1.3);
-  transition: all 0.4s;
-}
-.galeria .info-product {
-  display: flex;
-  justify-content: center;
-  font-size: 18px;
-  color: #a3cef1;
-}
-
-.footer-padre {
-  display: flex;
-  justify-content: space-evenly;
-}
-.footer-padre .titulos-footer {
-  display: flex;
-  flex-direction: column;
-  color: #c0fdfb;
-}
-.footer-padre .titulos-footer .a-footer {
-  color: #c0fdfb;
-}
-.footer-padre .titulos-footer .a-footer:hover {
-  transform: scale(1.3);
-  transition: all 0.4s;
-}
-.footer-padre .derechos {
-  text-align: center;
-  color: #c0fdfb;
-}
-
-@media screen and (max-width: 0px) and (max-width: 768px) {
+/* Media queries*/
+@media (max-width: 768px) {
+  body {
+    background-color: #6d7780;
+    background-image: none;
+  }
   .carousel-item {
     height: 40vh;
   }
@@ -203,7 +215,48 @@ body {
     height: 100%;
     object-fit: cover;
   }
-  .galeria {
-    flex-direction: row;
+  .miClaseDiv1 {
+    padding: 16px;
   }
-}/*# sourceMappingURL=estilos.css.map */
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .galeria .figura .efecto {
+    width: 250px;
+  }
+  .galeria .info-product {
+    font-size: 18px;
+    color: #000000;
+  }
+  .titulos-tiendas {
+    padding: 10px 0 10px 50px;
+    color: rgb(0, 0, 0);
+  }
+  .articulos p {
+    color: rgb(0, 0, 0);
+  }
+  .video-yt {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+  }
+  .img-local {
+    padding: 1rem;
+  }
+  .formulario {
+    align-items: center;
+    padding: 1rem;
+  }
+  .form {
+    padding: 1rem;
+  }
+  .mapita {
+    flex-direction: column;
+    width: 95%;
+    padding: 1rem;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

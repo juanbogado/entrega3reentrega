@@ -1,0 +1,62 @@
+/* Media queries*/
+
+@media (max-width: 768px){
+    body {
+    background-color: #6d7780;
+    background-image: none;
+    }
+    .carousel-item{
+        height: 40vh;
+    }
+    .carousel-item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .miClaseDiv1{
+        padding: 16px;
+    }
+    .galeria{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        .figura{
+            .efecto{
+                width: 250px;
+            }
+        }
+        .info-product{
+            font-size: 18px;
+            color: #000000;
+        }
+    }
+    .titulos-tiendas{
+        padding: 10px 0 10px 50px;
+        color: rgb(0, 0, 0);
+    }
+    .articulos p{
+        color: rgb(0, 0, 0);
+    }
+    .video-yt {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 1rem;
+    }
+    .img-local{
+        padding: 1rem;
+    }
+    .formulario{
+        align-items: center;
+        padding: 1rem;
+    }
+    .form{
+        padding: 1rem;
+    }
+    
+    .mapita{
+        flex-direction: column;
+        width: 95%;
+        padding: 1rem;
+    }
+    
+}
